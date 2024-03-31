@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Search1API
+  site: 'https://search1api.vercel.app'
   base: '/'
   trailingSlash: false
 
@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Search1API
+    template: '%s — Search1API'
+  description: "\U0001F680 Fast and cheap Search API for developers. Search1API is a search engine API that allows you to search the web, news and more."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Search1API
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@fatwang2ai'
+    site: '@fatwang2ai'
     cardType: summary_large_image
 
 i18n:
