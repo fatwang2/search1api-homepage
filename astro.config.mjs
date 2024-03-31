@@ -11,6 +11,9 @@ import icon from 'astro-icon';
 import compress from 'astro-compress';
 
 import astrowind from './src/integration';
+import vercel from '@astrojs/vercel/serverless';
+
+
 
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/utils/frontmatter.mjs';
 
@@ -71,7 +74,10 @@ export default defineConfig({
 
     astrowind(),
   ],
-
+  output: 'server',
+  adapter: vercel({
+    webAnalytics: { enabled: true }
+  }),
   image: {
     service: squooshImageService(),
   },
