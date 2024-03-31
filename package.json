@@ -1,6 +1,6 @@
 {
-  "name": "@onwidget/astrowind",
-  "description": "AstroWind: A free template using Astro 4.0 and Tailwind CSS. Astro starter theme.",
+  "name": "search1api",
+  "description": "a search engine for the 1api",
   "version": "1.0.0-beta.21",
   "private": true,
   "scripts": {

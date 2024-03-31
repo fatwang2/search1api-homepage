@@ -14,7 +14,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import Pricing from '~/components/widgets/Pricing.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Search1API— Fast and cheap search apis for AI',
   ignoreTitleTemplate: true,
 };
 ---
@@ -33,7 +33,7 @@ const metadata = {
       },
       { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/runningman.png', alt: 'runningman with search speed' }}
   >
     <Fragment slot="title">
       Fast and cheap<span class="hidden xl:inline">creating websites with</span>
@@ -42,7 +42,7 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Search1API</span> is a simple api for search and crawl contents, which is always needed by LLMs.</span
+        <span class="font-semibold">Search1API</span> is a simple api for searching and crawling content, which is always needed by LLMs.</span
       >
       <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
        It enables you to perform searches across Google, Bing, and DuckDuckGo, and also retrieve clear content from URLs.
@@ -62,29 +62,30 @@ const metadata = {
     subtitle="One API for search, the easiest way to turn LLMs into AGI"
     items={[
       {
-        title: 'Search engines you can choose',
+        title: 'Multiple Search Engine Options',
         description:
-          'Support Google, Bing, DuckDuckGo, you can choose what you like',
-        icon: 'tabler:layers-union',
+          'Select from Google, Bing, or DuckDuckGo to find the information you need, your way',
+        icon: 'tabler:search',
+
       },
       {
-        title: 'Crawl the URLs',
+        title: 'URL Content Extraction',
         description:
-          'Get the clean contents of a url',
-        icon: 'tabler:artboard',
+          'Get text-only content from any URL, perfect for content analysis and NLP tasks',
+        icon: 'tabler:link',
       },
       {
-        title: 'Deep search',
+        title: 'Deep Search for Rich Context',
         description:
-          'Search and crawl by the same time, to get the enough context for LLMs',
-        icon: 'tabler:writing',
+          'Retrieve search results and related webpage context for more informed LLM interactions',
+        icon: 'tabler:eye-search',
       },
       
       {
-        title: 'Batch Processing',
+        title: 'Efficient Batch Processing',
         description:
-          'Support passing multiple search requests in the form of arrays for parallel batch processing',
-        icon: 'tabler:podium',
+          'Submit multiple searches as an array for fast, parallel processing of large-scale data collection tasks',
+        icon: 'tabler:arrows-shuffle',
       },
     ]}
   />
@@ -97,29 +98,29 @@ const metadata = {
     title="Just post it"
     items={[
       {
-        title: 'search',
+        title: 'Search',
         description:
-          'You can get the results in about 1s, and you can choose how many results you want to search or deep search',
+          'Get lightning-fast results in just 1 second. Customize the number of results or use deep search for more comprehensive information',
       },
       {
-        title: 'news',
+        title: 'News',
         description:
-          'More helpful when you want something new',
+          'Stay updated with the latest breaking stories and trending topics using our news search feature',
       },
       {
-        title: 'crawl',
+        title: 'Crawl',
         description:
-          'It will get the content of the url without useless html code',
+          'Efficiently extract clean, structured webpage content with our intelligent HTML filtering algorithms',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: '~/assets/images/smilegirl.jpeg',
+      alt: 'Smile girl with search1api',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Search as you need</h3>
-       Gain a competitive advantage by incorporating industry leading practices
+       Search1API empowers you with quick searches, up-to-date news, and efficient content extraction to fuel your LLM applications. Experience the power of Search1API today
     </Fragment>
 
     <Fragment slot="bg">
@@ -159,12 +160,12 @@ const metadata = {
       },
       {
         title: 'One-time purchase',
-        subtitle: '800 times, support Alipay and wechat pay',
+        subtitle: '800 times, support Alipay and WeChat Pay',
         price: 0.99,
         period: '/ Year',
         callToAction: {
           target: '_blank',
-          text: 'But it now',
+          text: 'Buy it now',
           href: 'https://search2ai.online/api',
         },
       },
@@ -183,22 +184,22 @@ const metadata = {
       {
         title: 'How quickly will I receive a result?',
         description:
-          '1 to 2 seconds when you just search, 10s when you want to crawl a url',
+          'Search results are typically delivered within 1-2 seconds. URL crawling may take up to 10 seconds, depending on the complexity of the webpage',
       },
       {
         title: 'How can I use Batch Processing?',
         description:
-          "You can passing multiple search requests in the form of arrays for parallel batch processing",
+          "o use Batch Processing, simply pass an array of search requests to the API endpoint. Search1API will process these requests in parallel, enabling efficient handling of multiple searches simultaneously",
       },
       {
         title: "How can I see the usage?",
         description:
-          "You can post https://search.search2ai.one/usage to know the usage you have",
+          "To view your current usage statistics, make a POST request to https://search.search2ai.one/usage. The API will respond with detailed information about your account's usage, including the number of searches, crawls, and API calls made",
       },
       {
         title: 'What payment methods do you accept?',
         description:
-          "You can use card, google pay, apple pay in subscribtion and even paypal, alipay, wechatpay when you buy the one-time purchase",
+          "We accept a variety of payment methods to suit your needs. For subscription plans, you can pay using credit cards, Google Pay, or Apple Pay. If you opt for a one-time purchase, we also support PayPal, Alipay, and WeChat Pay",
       },
 
     ]}

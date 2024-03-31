@@ -1,6 +1,6 @@
 site:
   name: Search1API
-  site: 'https://search1api.vercel.app'
+  site: 'https://search1api.com'
   base: '/'
   trailingSlash: false
 
