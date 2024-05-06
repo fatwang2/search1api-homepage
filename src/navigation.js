@@ -22,12 +22,28 @@ export const headerData = {
       text: 'FAQ',
       href: getPermalink('/#faqs'),
     },
+    {
+      text: 'Pricacy',
+      links: [
+        {
+          text: 'Terms',
+          href: getPermalink('/terms'),
+        },
+        {
+          text: 'Privacy policy',
+          href: getPermalink('/privacy'),
+        },
+      ],
+    },
   ],
   actions: [{ text: 'Try it now', href: 'https://search2ai.online/api', target: '_blank' }],
 };
 
 export const footerData = {
-
+  secondaryLinks: [
+    { text: 'Terms', href: getPermalink('/terms') },
+    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+  ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://sum4all.site/twitter' },
     { ariaLabel: 'Telegram', icon: 'tabler:brand-telegram', href: 'https://sum4all.one/telegram' },
