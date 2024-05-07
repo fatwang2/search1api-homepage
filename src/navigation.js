@@ -23,7 +23,7 @@ export const headerData = {
       href: getPermalink('/#faqs'),
     },
     {
-      text: 'Pricacy',
+      text: 'Privacy',
       links: [
         {
           text: 'Terms',
