@@ -28,8 +28,8 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: '1 day for free',
-        href: 'https://search2ai.online/api',
+        text: 'buy now',
+        href: '#pricing',
         target: '_blank',
         icon: 'tabler:click',
       },
@@ -136,13 +136,13 @@ const metadata = {
     title="Pricing plans"
     prices={[
       {
-        title: 'First Try',
+        title: 'Almost Free',
         subtitle: '800 times',
         price: '0.99',
         period: '/ Year',
         callToAction: {
           target: '_blank',
-          text: '1 Day Free trail',
+          text: 'First Try',
           href: 'https://buy.stripe.com/14k9B65nuezVgJqaEF',
         },
       },
@@ -150,11 +150,11 @@ const metadata = {
         title: 'Feel Free',
         subtitle: '10,000 times',
         price: 7.99,
-        period: '/ Month',
+        period: '/ Year',
         callToAction: {
           target: '_blank',
           text: 'Upgrade to Pro',
-          href: 'https://search2ai.online/api',
+          href: 'https://buy.stripe.com/00g7sY9DKbnJbp6eUY',
         },
         hasRibbon: true,
         ribbonTitle: 'popular',
@@ -195,7 +195,7 @@ const metadata = {
       {
         title: "How can I see the usage?",
         description:
-          "To view your current usage statistics, make a POST request to https://search.search2ai.one/usage. The API will respond with detailed information about your account's usage, including the number of searches, crawls, and API calls made",
+          "To view your current usage statistics, make a GET request to https://api.search1api.com/usage. The API will respond with detailed information about your account's usage, including the number of searches, crawls, and API calls made",
       },
       {
         title: 'What payment methods do you accept?',
