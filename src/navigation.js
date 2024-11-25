@@ -19,6 +19,10 @@ export const headerData = {
       href: 'https://search2ai.online/docs',
     },
     {
+      text: 'Open Source',
+      href: '/opensource',
+    },
+    {
       text: 'FAQ',
       href: getPermalink('/#faqs'),
     },
@@ -35,6 +39,7 @@ export const headerData = {
         },
       ],
     },
+
   ],
   actions: [{ text: 'Try it now', href: 'https://search2ai.online/api', target: '_blank' }],
 };

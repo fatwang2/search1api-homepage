@@ -1,0 +1,74 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import { Icon } from 'astro-icon/components';
+
+const metadata = {
+  title: 'Open Source Projects',
+  description: 'Discover our open source AI search and summarization projects',
+};
+
+const projects = [
+  {
+    name: 'Search2AI',
+    description: 'An intelligent search engine powered by AI technology, designed to provide more accurate and context-aware search results.',
+    repo: 'fatwang2/search2ai',
+    icon: 'tabler:search',
+  },
+  {
+    name: 'Search4All',
+    description: 'A comprehensive search solution that aggregates multiple search sources to provide unified search results.',
+    repo: 'fatwang2/search4all',
+    icon: 'tabler:world-search',
+  },
+  {
+    name: 'Siri Ultra',
+    description: 'An enhanced voice assistant project that extends Siri\'s capabilities with advanced AI features.',
+    repo: 'fatwang2/siri-ultra',
+    icon: 'tabler:microphone-2',
+  },
+  {
+    name: 'Sum4All',
+    description: 'An AI-powered text summarization tool that helps users extract key information from long documents.',
+    repo: 'fatwang2/sum4all',
+    icon: 'tabler:file-text',
+  }
+].map(project => ({
+  ...project,
+  url: `https://github.com/${project.repo}`,
+  starsUrl: `https://img.shields.io/github/stars/${project.repo}?style=social&label=Stars&maxAge=3600`,
+  forksUrl: `https://img.shields.io/github/forks/${project.repo}?style=social&label=Forks&maxAge=3600`,
+}));
+---
+
+<PageLayout metadata={metadata}>
+  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
+    <h1 class="text-4xl font-bold leading-tighter tracking-tighter mb-8 font-heading">
+      Our Open Source Projects
+    </h1>
+    <p class="text-xl text-gray-600 mb-12">
+      Explore our collection of open source projects focused on AI-powered search and summarization technologies.
+    </p>
+    <div class="grid gap-6 md:grid-cols-2">
+      {
+        projects.map((project) => (
+          <a href={project.url} target="_blank" rel="noopener noreferrer" 
+             class="group flex flex-col h-full p-6 border border-gray-200 rounded-xl hover:shadow-lg transition duration-200 dark:border-gray-700 dark:hover:border-primary-600">
+            <div class="flex items-center mb-4">
+              <Icon name={project.icon} class="w-8 h-8 text-primary-600" />
+              <h3 class="text-xl font-bold ml-3">{project.name}</h3>
+            </div>
+            <p class="flex-grow text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
+            <div class="flex items-center space-x-4 text-sm">
+              <img src={project.starsUrl} alt="GitHub stars" height="20" />
+              <img src={project.forksUrl} alt="GitHub forks" height="20" />
+              <span class="text-primary-600 dark:text-primary-400 flex items-center ml-auto">
+                <Icon name="tabler:external-link" class="w-5 h-5" />
+                <span class="ml-1">View Project</span>
+              </span>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</PageLayout>
